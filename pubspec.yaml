@@ -1,0 +1,56 @@
+name: portfolio
+
+description: "A personal portfolio app to showcase my projects and skills."
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_web_plugins:
+    sdk: flutter
+  
+  cupertino_icons: ^1.0.8
+  flutter_breakpoints: ^1.0.0
+  go_router: ^16.2.0
+  get_it: ^8.2.0
+  provider: ^6.1.5+1
+  flutter_svg: ^2.2.0
+  url_launcher: ^6.3.2
+  lottie: ^3.3.2
+  flutter_sticky_header: ^0.8.0
+  visibility_detector: ^0.4.0+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter  
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/lotties/
+
+  fonts:
+    - family: AirbnbCereal
+      fonts:
+        - asset: assets/fonts/airbnb_cereal/airbnb_cereal-Black.ttf
+          weight: 900
+        - asset: assets/fonts/airbnb_cereal/airbnb_cereal-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/airbnb_cereal/airbnb_cereal-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/airbnb_cereal/airbnb_cereal-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/airbnb_cereal/airbnb_cereal-Book.ttf
+          weight: 400
+        - asset: assets/fonts/airbnb_cereal/airbnb_cereal-Light.ttf
+          weight: 300
