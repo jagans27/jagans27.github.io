@@ -48,11 +48,11 @@ class Constants {
       title: "LinkedIn",
       iconPath: AppAssets.linkedin,
     ),
-    SocialMediaContentModel(
-      url: "https://leetcode.com/JAGAN-S/",
-      title: "Leetcode",
-      iconPath: AppAssets.leetcode,
-    ),
+    // SocialMediaContentModel(
+    //   url: "https://leetcode.com/JAGAN-S/",
+    //   title: "Leetcode",
+    //   iconPath: AppAssets.leetcode,
+    // ),
     SocialMediaContentModel(
       url: "https://www.skillrack.com/faces/resume.xhtml?id=350927&key=jagan",
       title: "SkillRack",
