@@ -12,10 +12,11 @@ class Constants {
   static const String welcomeTextNewLine = "Hello,\nI'm Jagan.";
   static Description welcomeDescription = Description(
     text:
-        "Mobile Developer specializing in Flutter, with experience building production-grade apps for government, enterprise, and consumer use case. Focused on delivering seamless and user-friendly mobile experiences with strong expertise in state management across Android and iOS.",
+        "Mobile Developer specializing in Flutter and Android, with experience building production-grade apps for government, enterprise, and consumer use case. Focused on delivering seamless and user-friendly mobile experiences with strong expertise in state management across platforms.",
     highlights: [
       "Mobile Developer",
       "Flutter",
+      "Android",
       "government",
       "enterprise",
       "consumer use case",
