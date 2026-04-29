@@ -147,12 +147,12 @@ class _HomeMobileScreenState extends State<HomeMobileScreen> {
                   sliver: SliverGrid(
                     delegate: SliverChildBuilderDelegate((context, index) {
                       return ContentCard(
-                        project: Constants.krishworksProjects[index],
+                        project: Constants.avasoftProjects[index],
                         width: double.infinity,
                         height: 280, // fixed height
                         isDimming: false,
                       );
-                    }, childCount: Constants.krishworksProjects.length),
+                    }, childCount: Constants.avasoftProjects.length),
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 1, // 2 cards per row
