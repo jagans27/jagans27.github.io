@@ -10,20 +10,45 @@ class Constants {
 
   static const String welcomeText = "Hello, I'm Jagan.";
   static const String welcomeTextNewLine = "Hello,\nI'm Jagan.";
+  // static Description welcomeDescription = Description(
+  //   text:
+  //       "Mobile Developer specializing in Flutter and Android, with experience building production-grade apps for government, enterprise, and consumer use case. Focused on delivering seamless and user-friendly mobile experiences with strong expertise in state management across platforms.",
+  //   highlights: [
+  //     "Mobile Developer",
+  //     "Flutter",
+  //     "Android",
+  //     "government",
+  //     "enterprise",
+  //     "consumer use case",
+  //     "user-friendly",
+  //     "state management",
+  //   ],
+  // );
   static Description welcomeDescription = Description(
     text:
-        "Mobile Developer specializing in Flutter and Android, with experience building production-grade apps for government, enterprise, and consumer use case. Focused on delivering seamless and user-friendly mobile experiences with strong expertise in state management across platforms.",
+        "Mobile Developer specializing in Flutter and Android, with 2+ years of experience delivering end-to-end mobile development for production-grade apps across government, enterprise, and consumer domains. Skilled in Clean Architecture, MVVM, and state management (BLoC, Provider, MobX), with hands-on expertise in BLE, RESTful APIs, real-time communication (MQTT, WebSocket, SSE), secure payment gateway integration, and offline-first architecture - delivering reliable, scalable mobile experiences from architecture to release.",
     highlights: [
       "Mobile Developer",
       "Flutter",
       "Android",
       "government",
       "enterprise",
-      "consumer use case",
-      "user-friendly",
-      "state management",
+      "consumer",
+      "Clean Architecture",
+      "MVVM",
+      "BLoC",
+      "Provider",
+      "MobX",
+      "BLE",
+      "RESTful APIs",
+      "MQTT",
+      "WebSocket",
+      "SSE",
+      "secure payment gateway",
+      "offline-first architecture",
     ],
   );
+
   static const String krishworksProjectString = "Projects @ Krishworks";
   static const String avasoftProjectString = "Projects @ AVASoft";
   static const String personalProjectString = "Personal Projects";
@@ -86,18 +111,23 @@ class Constants {
       description: [
         Description(
           text:
-              "Enhanced a production-grade, real-time complaint-tracking module with full localization across Indian languages and dynamic text scaling, ensuring accessibility compliance.",
+              "Enhanced a production-grade, real-time complaint tracking module with full localization across all Indian languages and dynamic text scaling, fully compliant with WCAG 2.1 accessibility standards.",
           highlights: [
             "real-time",
             "localization",
             "dynamic text scaling",
-            "accessibility",
+            "WCAG 2.1",
           ],
         ),
         Description(
           text:
-              "Architected an advanced semantic tree and integrated voice & text bot capabilities to simplify user engagement and improve access to government schemes and benefits, fully compliant with WCAG 2.1 standards.",
-          highlights: ["semantic tree", "voice bot", "text bot", "WCAG 2.1"],
+              "Architected an advanced semantic tree and integrated voice & text bot capabilities to simplify access to government schemes and benefits for citizens nationwide (50K+ downloads).",
+          highlights: [
+            "semantic tree",
+            "voice bot",
+            "text bot",
+            "50K+ downloads",
+          ],
         ),
       ],
       technologies: ["Flutter"],
@@ -107,83 +137,92 @@ class Constants {
           "https://play.google.com/store/apps/details?id=com.geostat.sugamyabharatMOH&pcampaignid=web_share",
     ),
     ProjectModel(
+      name: "Slato Exam",
+      description: [
+        Description(
+          text:
+              "Implemented dual Razorpay payment flows (SDK-based and custom QR-code) with SSE for secure, real-time payment confirmation, powering a coin/credit package system for students.",
+          highlights: ["Razorpay", "SSE", "real-time", "payment"],
+        ),
+        Description(
+          text:
+              "Architected an offline-first data layer (Hive, background sync) enabling offline exam-taking and uninterrupted access in low-connectivity environments.",
+          highlights: ["offline-first", "Hive", "background sync"],
+        ),
+        Description(
+          text:
+              "Rendered mathematical formulas and equations via custom Markdown UI for exam content (1K+ downloads).",
+          highlights: ["custom Markdown UI", "1K+ downloads"],
+        ),
+      ],
+      technologies: ["Flutter", "Razorpay"],
+      playStoreLink:
+          "https://play.google.com/store/apps/details?id=com.slatoapp.com",
+    ),
+    ProjectModel(
       name: "CustomAir",
       description: [
         Description(
           text:
-              "Engineered secure BLE communication with bonding and auto-reconnect mechanisms, ensuring high-reliability, low-latency connectivity for smart truck systems.",
-          highlights: ["BLE", "bonding", "auto-reconnect", "low-latency"],
+              "Built a BLE-based mobile app to discover, pair, and securely bond with smart truck cabin controllers, enabling remote control of climate, lighting, secondary engine start/stop, and inverter-powered appliances.",
+          highlights: ["BLE", "pairing", "bonding", "remote control"],
         ),
         Description(
           text:
-              "Designed and developed a mobile interface enabling real-time automation, monitoring, and control of cabin environments and onboard utilities, optimizing operational efficiency across fleets.",
-          highlights: ["real-time", "automation", "monitoring", "control"],
+              "Implemented 6-digit pairing with BLE bonding and auto-reconnect for high-reliability, low-latency connectivity, with real-time status monitoring (battery, temperature, engine state) and consolidated fault/warning reporting for fleet diagnostics.",
+          highlights: [
+            "auto-reconnect",
+            "low-latency",
+            "real-time monitoring",
+            "fleet diagnostics",
+          ],
         ),
       ],
       technologies: ["Flutter", "BLE"],
       appStoreLink: "https://apps.apple.com/in/app/customair/id6738407652",
       playStoreLink:
-          "https://play.google.com/store/apps/details?id=com.kensho.custom_air&pcampaignid=web_share",
+          "https://play.google.com/store/apps/details?id=com.kensho.custom_air",
     ),
     ProjectModel(
-      name: "TechieTeacher",
+      name: "News Express",
       description: [
         Description(
           text:
-              "Implemented a teacher-driven, MQTT-powered real-time content synchronization system, enabling interactive lessons, task distribution, and scalable classroom experiences.",
+              "Enhanced a shipment management app with docket upload and LRN number extraction, real-time shipment assignment to drivers, and vehicle number updates.",
           highlights: [
-            "MQTT",
-            "real-time",
-            "content synchronization",
-            "interactive",
+            "docket upload",
+            "LRN extraction",
+            "real-time assignment",
           ],
         ),
         Description(
           text:
-              "Ensured low-latency page navigation across all connected student tablets, delivering seamless and synchronized learning experiences.",
-          highlights: ["low-latency", "scalability", "synchronization"],
+              "Implemented multipart image upload for in-app camera-based delivery documentation, with a focus on a lightweight, fast, and intuitive design for end customers.",
+          highlights: [
+            "multipart upload",
+            "in-app camera",
+            "lightweight design",
+          ],
         ),
       ],
-      technologies: ["Android", "MQTT"],
+      technologies: ["Flutter"],
       playStoreLink:
-          "https://play.google.com/store/apps/details?id=com.krishworks.techieteacher&pcampaignid=web_share",
-    ),
-    ProjectModel(
-      name: "SmartEntertainment",
-      description: [
-        Description(
-          text:
-              "Developed a custom Android TV launcher with MQTT-based on premises application provisioning and secure OTA update pipeline.",
-          highlights: ["Android TV", "MQTT", "OTA update"],
-        ),
-        Description(
-          text:
-              "Enabled zero-downtime guest lifecycle management (onboarding/offboarding) and low-latency hotel content broadcasting.",
-          highlights: ["zero-downtime", "low-latency", "guest lifecycle"],
-        ),
-        Description(
-          text:
-              "Provided controlled access to third-party entertainment platforms and locked-down native system settings for enhanced security and operational control.",
-          highlights: ["access control", "security", "system control"],
-        ),
-      ],
-      technologies: ["Jetpack Compose"],
-      websiteLink: "https://devicethread.com/smartentertainment.html",
+          "https://play.google.com/store/apps/details?id=com.nelogistics.app",
     ),
     ProjectModel(
       name: "Life Smarter",
       description: [
         Description(
           text:
-              "Architected an Android OS A/B (seamless) partition update system leveraging RAUC for OTA management and Mender for cloud-based push deployments.",
-          highlights: ["Android OS", "A/B partition", "RAUC", "Mender", "OTA"],
+              "Restructured U-Boot and kernel partition flow to enable Android OS A/B (seamless) updates, integrating RAUC for OTA management and Mender for cloud-based push deployments.",
+          highlights: ["U-Boot", "A/B partition", "RAUC", "Mender", "OTA"],
         ),
         Description(
           text:
-              "Designed rollback-safe mechanisms and a secure update flow to ensure zero downtime system upgrades, fault tolerance, and uninterrupted device operation.",
+              "Designed rollback-safe mechanisms and secure update flow, achieving zero-downtime upgrades and improved fault tolerance across deployed devices.",
           highlights: [
-            "rollback",
-            "zero downtime",
+            "rollback-safe",
+            "zero-downtime",
             "fault tolerance",
             "secure update",
           ],
@@ -192,17 +231,33 @@ class Constants {
       technologies: ["Linux"],
     ),
     ProjectModel(
+      name: "Smart Entertainment",
+      description: [
+        Description(
+          text:
+              "Built a custom Android TV launcher for hotel guest rooms with a curated app menu, local attractions carousel, and checkout-time access control.",
+          highlights: ["Android TV", "curated menu", "access control"],
+        ),
+        Description(
+          text:
+              "Engineered MQTT-based on-premises app provisioning to push updates from a local server (bypassing Play Store), with locked-down settings to restrict unauthorized installs/uninstalls.",
+          highlights: [
+            "MQTT",
+            "on-premises provisioning",
+            "locked-down settings",
+          ],
+        ),
+      ],
+      technologies: ["Jetpack Compose"],
+      websiteLink: "https://devicethread.com/smartentertainment.html",
+    ),
+    ProjectModel(
       name: "Sytrak RTLS",
       description: [
         Description(
           text:
-              "Developed a real-time location tracking engine using BLE(RSSI and AOA) and UWB triangulation, providing accurate asset and personnel tracking in complex indoor environments.",
-          highlights: ["real-time", "BLE", "UWB triangulation", "indoor"],
-        ),
-        Description(
-          text:
-              "Implemented a scalable architecture for seamless integration with existing infrastructure, enabling efficient deployment and management of RTLS across large facilities.",
-          highlights: ["scalable architecture", "integration", "deployment"],
+              "Built core components of a real-time location tracking system using BLE (RSSI/AoA) and UWB triangulation with geofencing, enabling scalable indoor asset and personnel tracking.",
+          highlights: ["real-time", "BLE", "UWB triangulation", "geofencing"],
         ),
       ],
       technologies: ["Linux", "BLE", "UWB"],
