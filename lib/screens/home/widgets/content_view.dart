@@ -36,17 +36,15 @@ class ContentView extends StatelessWidget {
                         ),
                       ),
 
-                      const Expanded(flex: 1, child: SizedBox.shrink()),
-
                       Padding(
-                        padding: EdgeInsets.symmetric(vertical: 20.0),
+                        padding: EdgeInsets.symmetric(vertical: 10.0),
                         child: LineMenu(listOfMenu: Constants.menuItems),
                       ),
 
                       const Expanded(flex: 1, child: SizedBox.shrink()),
 
                       Padding(
-                        padding: EdgeInsets.only(bottom: 45),
+                        padding: EdgeInsets.only(bottom: 20),
                         child: SocialMediaView(
                           showText: MediaQuery.of(context).size.width > 1480,
                           iconSize: MediaQuery.of(context).size.width > 1480
@@ -55,6 +53,7 @@ class ContentView extends StatelessWidget {
                           textSize: 12,
                         ),
                       ),
+                      const Expanded(flex: 1, child: SizedBox.shrink()),
                     ],
                   ),
                 ),
