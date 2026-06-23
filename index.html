@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0.5, maximum-scale=3.0, user-scalable=yes">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="Jagan | Portfolio">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>Jagan S | Flutter & Android Developer Portfolio</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description"
+    content="Jagan S is a Flutter Developer and Android Mobile App Developer with experience building production-grade applications for government, enterprise, and consumer use cases. Specialized in high-performance, scalable, and user-friendly mobile apps across Android and iOS using Flutter.">
+
+  <meta name="keywords"
+    content="Jagan, Jagan S, Jagan S Flutter Developer, Jagan Flutter Developer, Flutter Developer India, Android Developer India, Mobile App Developer Flutter, Flutter Engineer, Android Engineer, Flutter Portfolio, Mobile Developer India">
+  <meta name="author" content="Jagan S">
+  <meta name="robots" content="index, follow">
+  <meta name="googlebot" content="index, follow">
+
+  <!-- Open Graph / Social Media -->
+  <meta property="og:title" content="Jagan S | Flutter & Android Developer Portfolio">
+  <meta property="og:description"
+    content="Mobile Developer specializing in Flutter, with experience building production-grade apps for government, enterprise, and consumer use cases. Focused on delivering seamless, high-performance, and user-friendly mobile experiences across Android and iOS.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jagans27.github.io/">
+  <meta property="og:image" content="https://jagans27.github.io/favicon.png">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jagan S | Flutter & Android Developer">
+  <meta name="twitter:description"
+    content="Mobile Developer specializing in Flutter, with experience building production-grade apps for government, enterprise, and consumer use cases. Focused on delivering seamless, high-performance, and user-friendly mobile experiences across Android and iOS.">
+  <meta name="twitter:image" content="https://jagans27.github.io/favicon.png">
+
+  <link rel="manifest" href="manifest.json">
+
+  <style>
+    html,
+    body {
+      background-color: #151515;
+      margin: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+
+    /* Loader container */
+    #loading {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #151515;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      transition: opacity 0.1s ease-out;
+    }
+
+    #loading.fade-out {
+      opacity: 0;
+    }
+
+    /* Spinning logo */
+    #loading img {
+      width: 80px;
+      height: 80px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 30px;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    /* Bubble loader (horizontal dots) */
+    .bubble-loader {
+      display: flex;
+      gap: 10px;
+    }
+
+    .bubble-loader div {
+      width: 7px;
+      height: 7px;
+      background: white;
+      border-radius: 50%;
+      animation: bounce 1.2s infinite ease-in-out;
+    }
+
+    .bubble-loader div:nth-child(1) { animation-delay: 0s; }
+    .bubble-loader div:nth-child(2) { animation-delay: 0.2s; }
+    .bubble-loader div:nth-child(3) { animation-delay: 0.4s; }
+    .bubble-loader div:nth-child(4) { animation-delay: 0.6s; }
+
+    @keyframes bounce {
+      0%, 80%, 100% { transform: scale(0); }
+      40% { transform: scale(1); }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Loader -->
+  <div id="loading">
+    <img src="favicon.png" alt="Logo" />
+    <div class="bubble-loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </div>
+
+  <script src="flutter_bootstrap.js" async></script>
+
+  <script type="module">
+    import * as pdfjsLib from 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.9.155/pdf.min.mjs';
+    pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.9.155/pdf.worker.min.mjs";
+
+    // IMPORTANT: Wait for Flutter to be fully ready before hiding loader
+    window.addEventListener('flutter-first-frame', function() {
+      const loader = document.getElementById('loading');
+      if (loader) {
+        loader.classList.add('fade-out');
+        setTimeout(() => {
+          loader.style.display = 'none';
+        }, 100); // Match the CSS transition duration
+      }
+    });
+  </script>
+</body>
+
+</html>
