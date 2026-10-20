@@ -217,7 +217,7 @@ class Constants {
     ),
 
     ProjectModel(
-      name: "News Express",
+      name: "Cortex Captains",
       description: [
         Description(
           text:
