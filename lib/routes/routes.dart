@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:go_router/go_router.dart';
 import 'package:portfolio/routes/pages.dart';
 import 'package:portfolio/screens/home/home_screen.dart';
@@ -17,7 +18,7 @@ class AppRouter {
             initialIndex = 1;
           }
 
-          print("➡️ Route rebuild with tab=$tab, index=$initialIndex");
+          debugPrint("➡️ Route rebuild with tab=$tab, index=$initialIndex");
 
           return HomeScreen(initialIndex: initialIndex);
         },

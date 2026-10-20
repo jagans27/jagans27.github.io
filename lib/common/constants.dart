@@ -184,6 +184,39 @@ class Constants {
           "https://play.google.com/store/apps/details?id=com.kensho.custom_air",
     ),
     ProjectModel(
+      name: "KBT12 Engine Control",
+      description: [
+        Description(
+          text:
+              "BLE-based mobile application for diesel stationary engines, featuring secure 6-digit pairing, live engine and pump parameter monitoring (RPM, temperature, fuel level, pressure, etc.), gauge-based visualization, and precise configuration handling for 250+ parameters across three controller variants involving complex calculations and parameter conversions.",
+          highlights: [
+            "BLE",
+            "6-digit pairing",
+            "live engine monitoring",
+            "gauge-based visualization",
+            "250+ parameters",
+            "precise configuration",
+          ],
+        ),
+        Description(
+          text:
+              "Implemented engine and pump configuration management, configuration file export and sharing via email and messaging apps, and Bluetooth-based remote control with supported start/stop operations for convenient setup, service monitoring, and diagnostics without direct access to the controller panel.",
+          highlights: [
+            "configuration management",
+            "file export and sharing",
+            "remote control",
+            "start/stop operations",
+            "engine diagnostics",
+          ],
+        ),
+      ],
+      technologies: ["Flutter", "BLE"],
+      appStoreLink:
+          "https://apps.apple.com/in/app/kbt12-engine-control/id6786130077",
+      playStoreLink: null,
+    ),
+
+    ProjectModel(
       name: "News Express",
       description: [
         Description(

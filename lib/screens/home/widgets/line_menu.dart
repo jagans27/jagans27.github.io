@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:portfolio/common/constants.dart';
 import 'package:portfolio/controllers/root_controller.dart';
-import 'package:portfolio/routes/pages.dart';
 import 'package:portfolio/screens/home/widgets/line_menu_item.dart';
 import 'package:portfolio/utils/utils.dart';
 import 'package:provider/provider.dart';
