@@ -26,7 +26,7 @@ class Constants {
   // );
   static Description welcomeDescription = Description(
     text:
-        "Mobile Developer specializing in Flutter and Android, with 2+ years of experience delivering end-to-end mobile development for production-grade apps across government, enterprise, and consumer domains. Skilled in Clean Architecture, MVVM, and state management (BLoC, Provider, MobX), with hands-on expertise in BLE, RESTful APIs, real-time communication (MQTT, WebSocket, SSE), secure payment gateway integration, and offline-first architecture - delivering reliable, scalable mobile experiences from architecture to release.",
+        "Mobile Developer specializing in Flutter and Android, with 2+ years of experience delivering end-to-end mobile development for production-grade apps across government, enterprise, and consumer domains. Skilled in Clean Architecture, MVVM, and state management (BLoC, Provider, MobX), with hands-on expertise in BLE, RESTful APIs, real-time communication (MQTT, WebSocket, SSE), AI/ML integration, secure payment gateway integration, and offline-first architecture - delivering reliable, scalable mobile experiences from architecture to release.",
     highlights: [
       "Mobile Developer",
       "Flutter",
@@ -45,6 +45,7 @@ class Constants {
       "WebSocket",
       "SSE",
       "secure payment gateway",
+      "AI/ML",
       "offline-first architecture",
     ],
   );
