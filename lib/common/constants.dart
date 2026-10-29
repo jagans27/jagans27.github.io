@@ -214,7 +214,7 @@ class Constants {
       technologies: ["Flutter", "BLE"],
       appStoreLink:
           "https://apps.apple.com/in/app/kbt12-engine-control/id6786130077",
-      playStoreLink: null,
+      playStoreLink: "https://play.google.com/store/apps/details?id=com.kensho.modbus",
     ),
 
     ProjectModel(
